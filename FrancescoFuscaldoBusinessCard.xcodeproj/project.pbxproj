@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A9D8B381FC4901000575390 /* BusinessCardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9D8B371FC4901000575390 /* BusinessCardController.swift */; };
 		0AFC85101FC30EF900903EEB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFC850F1FC30EF900903EEB /* AppDelegate.swift */; };
 		0AFC85121FC30EF900903EEB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFC85111FC30EF900903EEB /* ViewController.swift */; };
 		0AFC85151FC30EF900903EEB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AFC85131FC30EF900903EEB /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0A9D8B371FC4901000575390 /* BusinessCardController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessCardController.swift; sourceTree = "<group>"; };
 		0AFC850C1FC30EF900903EEB /* FrancescoFuscaldoBusinessCard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FrancescoFuscaldoBusinessCard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AFC850F1FC30EF900903EEB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0AFC85111FC30EF900903EEB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -57,6 +59,7 @@
 				0AFC850F1FC30EF900903EEB /* AppDelegate.swift */,
 				0AFC85111FC30EF900903EEB /* ViewController.swift */,
 				0AFC85131FC30EF900903EEB /* Main.storyboard */,
+				0A9D8B371FC4901000575390 /* BusinessCardController.swift */,
 				0AFC85161FC30EF900903EEB /* Assets.xcassets */,
 				0AFC85181FC30EF900903EEB /* LaunchScreen.storyboard */,
 				0AFC851B1FC30EF900903EEB /* Info.plist */,
@@ -137,6 +140,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0AFC85121FC30EF900903EEB /* ViewController.swift in Sources */,
+				0A9D8B381FC4901000575390 /* BusinessCardController.swift in Sources */,
 				0AFC85101FC30EF900903EEB /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
