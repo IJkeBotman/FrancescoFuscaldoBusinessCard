@@ -56,7 +56,6 @@ class BusinessCardController: UIViewController {
     }
     
     func switchButtonState(for button: UIButton) {
-        print("Inside switchButtonState")
         if button.tag == 1000 {
             buttonOne = !buttonOne
             if buttonOne {
