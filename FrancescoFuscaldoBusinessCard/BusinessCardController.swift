@@ -13,6 +13,13 @@ class BusinessCardController: UIViewController {
     var buttonOne = false
     var buttonTwo = false
     var buttonThree = false
+    
+    @IBOutlet var buttons: [UIButton]!
+    @IBOutlet weak var appView: UIView!
+    @IBOutlet weak var iOSView: UIView!
+    @IBOutlet weak var swiftView: UIView!
+    @IBOutlet var views: [UIView]!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -79,9 +86,41 @@ class BusinessCardController: UIViewController {
         }
     }
     
+    func resetAllButtons(for buttons: [UIButton]) {
+        for button in buttons {
+            button.backgroundColor = UIColor.black
+            button.setTitleColor(UIColor(named: "FrancescoRed"), for: .normal)
+            button.titleLabel?.font = UIFont.systemFont(ofSize: 24, weight: .light)
+            
+        }
+        buttonOne = false
+        buttonTwo = false
+        buttonThree = false
+    }
+    
+    func resetAllViews(for views: [UIView]) {
+        for view in views {
+            view.isHidden = true
+        }
+    }
+    @IBAction func close(_ sender: UIButton) {
+        self.dismiss(animated: false, completion: nil)
+    }
+    
     @IBAction func pressedButton(_ sender: UIButton) {
         
+        resetAllButtons(for: buttons)
+        resetAllViews(for: views)
         switchButtonState(for: sender)
+        if sender.tag == 1000 {
+            appView.isHidden = false
+        }
+        if sender.tag == 2000 {
+            iOSView.isHidden = false
+        }
+        if sender.tag == 3000 {
+            swiftView.isHidden = false
+        }
         
     }
     
